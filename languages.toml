@@ -1,0 +1,13 @@
+[language-server.tinymist]
+command = "tinymist"
+config =  { exportPDF = "onType", outputPath = "$HOME/uni/notes" }
+
+[[language]]
+name = "typst"
+scope = "source.typ"
+indent = { tab-width = 2, unit = "  " }
+language-servers = [ "tinymist" ]
+
+[[language]]
+name = "markdown"
+indent = { tab-width = 4, unit = "    " }

@@ -1,0 +1,27 @@
+theme = "flexoki-dark"
+
+[editor]
+line-number = "relative"
+bufferline = "always"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 40
+
+[keys.normal]
+A-s = ":echo %sh{ render_md %{buffer_name}}" 
+esc = ["collapse_selection", "keep_primary_selection"]
+C-d = ":half-page-down-smooth"
+C-u = ":half-page-up-smooth"
+pageup = ":page-up-smooth"
+pagedown = ":page-down-smooth"
+A-l = ":checkbox_toggle!"
+
+[keys.normal.space]
+"." = "file_picker_in_current_buffer_directory"
+
