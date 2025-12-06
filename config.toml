@@ -1,4 +1,4 @@
-# theme = "zed_onedark"
+#theme = rose_pine_moon
 
 [editor]
 bufferline = "always"
@@ -16,6 +16,7 @@ select = "underline"
 
 [editor.indent-guides]
 render = true
+skip-levels = 0
 
 [editor.lsp]
 display-inlay-hints = true
@@ -36,7 +37,11 @@ separator = "|"
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
 "d" = "delete_selection_noyank"
-C-x = "delete_selection"
+A-x = "delete_selection"
 
 [keys.normal.space]
 "." = "file_picker_in_current_buffer_directory"
+l = ":toggle lsp.display-inlay-hints"
+m = ":toggle indent-guides.render"
+
+
